@@ -1,0 +1,88 @@
+.contentNav {
+  display: grid;
+  gap: 1rem;
+  align-self: start;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formDate {
+  display: flex;
+  gap: 1.5rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.formDate div {
+  flex: 1;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.formDate label,
+.formDate input {
+  color: var(--cor-titulo);
+  padding: 0.6rem;
+  border-radius: 1rem;
+  background: var(--cor-secundaria);
+  font-weight: bold;
+}
+
+.formDate input {
+  color: #000;
+  font-weight: initial;
+  justify-self: start;
+  border: none;
+  font-size: 1rem;
+}
+
+.titulo {
+  background: var(--cor-primaria);
+  color: var(--cor-titulo);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+}
+
+.contentMeses {
+  display: flex;
+  gap: 1rem;
+}
+
+.contentMeses button {
+  flex: 1;
+  font-size: 1.3rem;
+  background: var(--cor-primaria);
+  padding: 1rem;
+  color: var(--cor-titulo);
+  text-align: center;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .titulo {
+    grid-row: 1;
+    padding: 1rem;
+  }
+  .contentMeses button {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .contentMeses,
+  .formDate {
+    flex-direction: column;
+  }
+}

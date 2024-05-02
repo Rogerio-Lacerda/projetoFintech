@@ -1,0 +1,46 @@
+.main {
+  display: grid;
+  gap: 1rem;
+  align-self: start;
+  padding-right: 1rem;
+}
+
+.vendas {
+  display: grid;
+  gap: 1rem;
+  color: var(--cor-paragrafo);
+}
+
+.venda {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vendaInfo {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.vendaInfo a {
+  display: block;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 700px) {
+  .venda,
+  .vendaInfo {
+    display: grid;
+    gap: 0.8rem;
+    align-items: start;
+    justify-content: start;
+  }
+  .idUser {
+    font-size: 0.8rem;
+  }
+}

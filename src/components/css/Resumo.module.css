@@ -1,0 +1,41 @@
+.main {
+  display: grid;
+  gap: 1rem;
+  align-self: start;
+}
+
+.faturamento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.faturamento div {
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.faturamento h2 {
+  color: var(--cor-paragrafo);
+}
+
+.faturamento p {
+  color: var(--cor-titulo);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.grafico {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .faturamento {
+    grid-template-columns: 1fr;
+  }
+}
