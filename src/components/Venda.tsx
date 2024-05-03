@@ -15,8 +15,9 @@ interface Venda {
 
 const Venda = () => {
   const { pathname } = useLocation();
+  const url = pathname.replace('/projetoFintech', '');
   const { data, error, loading, request } = useFetch<Venda>(
-    `https://data.origamid.dev${pathname}`,
+    `https://data.origamid.dev${url}`,
   );
 
   React.useEffect(() => {

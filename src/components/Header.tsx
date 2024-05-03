@@ -16,13 +16,13 @@ const Header = () => {
         <ul>
           <li>
             <img src={SvgResumo} alt="" />
-            <NavLink to="/" end>
+            <NavLink to="/projetoFintech" end>
               Resumo
             </NavLink>
           </li>
           <li>
             <img src={SvgVendas} alt="" />
-            <NavLink to="/vendas">Vendas</NavLink>
+            <NavLink to="/projetoFintech/vendas">Vendas</NavLink>
           </li>
           <li>
             <img src={SvgWebhooks} alt="" />

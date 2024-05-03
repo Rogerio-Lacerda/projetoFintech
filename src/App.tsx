@@ -13,8 +13,8 @@ function App() {
           <UserContextProvider>
             <Header />
             <Routes>
-              <Route path="/" element={<Resumo />} />
-              <Route path="/vendas/*" element={<Vendas />} />
+              <Route path="/projetoFintech" element={<Resumo />} />
+              <Route path="/projetoFintech/vendas/*" element={<Vendas />} />
             </Routes>
           </UserContextProvider>
         </div>
